@@ -1,3 +1,5 @@
+(fork to use fixed-length vector clock, so that timestamps can be lexicographically sorted)
+
 # Hybrid Logical Clock
 
 A [Hybrid Logical Clock](http://muratbuffalo.blogspot.com/2014/07/hybrid-logical-clocks.html) is a resilient and simple distributed clock that provides the ability for identity and ordering of messages in a distributed system.
