@@ -42,7 +42,7 @@ function inc(my) {
 function serial(hlc) {
   // convert hlc.nn with toString(16) with leading zeros, to make it 4 digits
   // Note: this limits us to 65535 events per millisecond
-  let nnHex = '0000' + hlc.nn.toString(16).toUpperCase().slice(-4);
+  let nnHex = ('0000' + hlc.nn.toString(16).toUpperCase()).slice(-4);
   return `${hlc.ts}:${nnHex}:${hlc.id}`
 }
 
